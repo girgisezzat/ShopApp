@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: 
       [
+        //ShopApp
         BlocProvider(create: (context) => NewsCubit()..getBusinessData(),),
         BlocProvider(create: (BuildContext context) => AppCubit(),),
         BlocProvider(create: (BuildContext context) => ShopCubit()
